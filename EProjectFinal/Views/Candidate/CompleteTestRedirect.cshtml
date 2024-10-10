@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Complete Test";
+}
+
+<h2>Completing the Test...</h2>
+<p>You will be redirected shortly to complete the test.</p>
+
+<form id="completeTestForm" method="post" action="@Url.Action("CompleteTest", "Candidate")">
+    <input type="hidden" name="complete" value="true" />
+</form>
+
+<script>
+    document.getElementById("completeTestForm").submit();
+</script>

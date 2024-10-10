@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+
+@model IEnumerable<EProjectFinal.Models.Result>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Test Results</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .card-body p {
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+        .status {
+            font-weight: bold;
+        }
+        .status.passed {
+            color: green;
+        }
+        .status.failed {
+            color: red;
+        }
+        .container {
+            margin-top: 30px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h2>Your Test Results</h2>
+
+        @if (!Model.Any())
+        {
+            <p class="text-center text-muted mt-4">Results are not available yet.</p>
+        }
+        else
+        {
+            <div class="row justify-content-center mt-4">
+                @foreach (var result in Model)
+                {
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                @result.Test.TestName
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Total Marks Obtained:</strong> @result.TotalMarks</p>
+                                <p><strong>Max Marks:</strong> @result.Test.MaxMarks</p>
+                                <p>
+                                    <strong>Status:</strong>
+                                    <span class="status @(result.IsPassed ? "passed" : "failed")">
+                                        @(result.IsPassed ? "Passed" : "Failed")
+                                    </span>
+                                </p>
+                                <p><strong>Date Taken:</strong> @result.TestDate?.ToString("dd-MM-yyyy")</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

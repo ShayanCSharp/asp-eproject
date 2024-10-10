@@ -1,0 +1,133 @@
+﻿@{
+    Layout = null;
+}
+
+@model EProjectFinal.Models.Question
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body h4 {
+            color: #333;
+        }
+
+        .form-check-label {
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-weight: bold;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        @if (Model != null)
+        {
+            <h2 class="text-center">@Model.Test?.TestName - Question</h2>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <form id="questionForm" method="post" action="@Url.Action("SubmitAnswer", "Candidate")">
+                        <input type="hidden" name="questionId" value="@Model.QuestionId" />
+
+                        <h4 class="mb-4">@Model.QuestionText</h4>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="selectedAnswer" value="Option1" required />
+                            <label class="form-check-label">
+                                @Model.Option1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="selectedAnswer" value="Option2" required />
+                            <label class="form-check-label">
+                                @Model.Option2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="selectedAnswer" value="Option3" required />
+                            <label class="form-check-label">
+                                @Model.Option3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="selectedAnswer" value="Option4" required />
+                            <label class="form-check-label">
+                                @Model.Option4
+                            </label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary" onclick="handleSubmit('@ViewBag.IsLastQuestion')">
+                                @if (ViewBag.IsLastQuestion == true)
+                                {
+                                    @:Complete Section
+                                }
+                                else
+                                {
+                                    @:Submit Answer
+                                }
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        else
+        {
+            <p class="text-danger text-center">Error: Question data is missing.</p>
+        }
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleSubmit(isLastQuestion) {
+            var form = document.getElementById("questionForm");
+            if (isLastQuestion === "True") {
+                // Redirect to CompleteSection if last question
+                form.action = "@Url.Action("CompleteSection", "Candidate")";
+            } else {
+                // Otherwise, go to SubmitAnswer
+                form.action = "@Url.Action("SubmitAnswer", "Candidate")";
+            }
+        }
+    </script>
+
+</body>
+</html>

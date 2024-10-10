@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\manager\\viewcandidates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\manager\\viewcandidates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\manager\\addcandidate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\manager\\addcandidate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\candidate\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\candidate\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\candidate\\loadquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\candidate\\loadquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\candidate\\viewresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\candidate\\viewresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\wwwroot\\admin\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\wwwroot\\admin\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\candidate\\completetestredirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\candidate\\completetestredirect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|c:\\users\\cz 3\\source\\repos\\eprojectfinal\\eprojectfinal\\views\\manager\\viewtests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{768E2E79-1A61-46A0-8141-09C0E393451E}|EProjectFinal\\EProjectFinal.csproj|solutionrelative:eprojectfinal\\views\\manager\\viewtests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddCandidate.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\AddCandidate.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Manager\\AddCandidate.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\AddCandidate.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Manager\\AddCandidate.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAH8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T05:27:01.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewCandidates.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\ViewCandidates.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Manager\\ViewCandidates.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\ViewCandidates.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Manager\\ViewCandidates.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T05:26:45.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "EProjectFinal\\Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "EProjectFinal\\Controllers\\ManagerController.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAAAPUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T20:01:25.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EProjectFinal\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EProjectFinal\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T19:41:33.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ViewTests.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\ViewTests.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Manager\\ViewTests.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Manager\\ViewTests.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Manager\\ViewTests.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAG8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T15:09:15.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Candidate\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\Dashboard.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Candidate\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T06:17:00.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\ViewResults.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Candidate\\ViewResults.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\ViewResults.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Candidate\\ViewResults.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T06:16:09.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CandidateController.cs",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Controllers\\CandidateController.cs",
+              "RelativeDocumentMoniker": "EProjectFinal\\Controllers\\CandidateController.cs",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Controllers\\CandidateController.cs",
+              "RelativeToolTip": "EProjectFinal\\Controllers\\CandidateController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAJkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T06:07:59.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoadQuestion.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\LoadQuestion.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Candidate\\LoadQuestion.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\LoadQuestion.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Candidate\\LoadQuestion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T05:36:38.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompleteTestRedirect.cshtml",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\CompleteTestRedirect.cshtml",
+              "RelativeDocumentMoniker": "EProjectFinal\\Views\\Candidate\\CompleteTestRedirect.cshtml",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\Views\\Candidate\\CompleteTestRedirect.cshtml",
+              "RelativeToolTip": "EProjectFinal\\Views\\Candidate\\CompleteTestRedirect.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T21:28:14.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\wwwroot\\admin\\css\\styles.css",
+              "RelativeDocumentMoniker": "EProjectFinal\\wwwroot\\admin\\css\\styles.css",
+              "ToolTip": "C:\\Users\\CZ 3\\source\\repos\\EProjectFinal\\EProjectFinal\\wwwroot\\admin\\css\\styles.css",
+              "RelativeToolTip": "EProjectFinal\\wwwroot\\admin\\css\\styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-10T04:35:23.668Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

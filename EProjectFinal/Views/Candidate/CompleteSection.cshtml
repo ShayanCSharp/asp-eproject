@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null; // Set this if you’re not using a main layout, otherwise use your Layout
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Section</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3>Section Completed</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>Congratulations! You have successfully completed the <strong>@ViewBag.CurrentSection</strong> section.</p>
+
+                        @if (ViewBag.IsLastSection)
+                        {
+                            <p>You have now completed all sections of the test.</p>
+                            <p>Click the button below to view your results.</p>
+                            <form asp-action="CompleteTest" method="post">
+                                <button type="submit" class="btn btn-success">Complete Test & View Results</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <p>Click the button below to proceed to the next section: <strong>@ViewBag.NextSection</strong>.</p>
+                            <form asp-action="CompleteSection" method="post">
+                                <button type="submit" class="btn btn-primary">Proceed to Next Section</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

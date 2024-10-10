@@ -1,0 +1,61 @@
+﻿@model EProjectFinal.Models.ViewModels.ManagerLogin
+
+@{
+    ViewData["Title"] = "Manager Login";
+}
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Manager Login</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li>Manager Login</li>
+                </ol>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+<!-- end page-title -->
+<!-- start login-section -->
+<section class="login-section section-padding">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3 class="panel-title">Manager Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Begin Form -->
+                        <form asp-action="ManagerLogin" asp-controller="Account" method="post">
+                            <div class="form-group">
+                                <label asp-for="Username" class="control-label">Username</label>
+                                <input asp-for="Username" class="form-control" placeholder="Enter your username" />
+                                <span asp-validation-for="Username" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Password" class="control-label">Password</label>
+                                <input type="password" asp-for="Password" class="form-control" placeholder="Enter your password" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </div>
+                        </form>
+                        <!-- End Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+<!-- end login-section -->

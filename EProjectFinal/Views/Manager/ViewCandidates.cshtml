@@ -1,0 +1,159 @@
+﻿@model IEnumerable<EProjectFinal.Models.Candidate>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>View Candidates - Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+          rel="stylesheet" />l
+    <link href="~/admin/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+            crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" asp-action="Dashboard">Manager Panel</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+                id="sidebarToggle"
+                href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navbar Search-->
+
+        <a asp-action="Logout" asp-controller="Account" class="btn btn-danger ms-auto">Logout</a>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            Dashboard
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Test</div>
+                        <a class="nav-link" asp-action="ViewTests" asp-controller="Manager">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-exam"></i>
+                            </div>
+                            View Tests
+                        </a>
+                        <a class="nav-link" asp-action="ViewQuestions" asp-controller="Manager">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-exam"></i>
+                            </div>
+                            View Questions
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Candidates</div>
+                        <a class="nav-link" asp-action="ViewCandidates" asp-controller="Manager">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            View Cadidates
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Manager
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main class="container-fluid px-4">
+                <h1 class="mt-4">View Candidates</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Dashboard", "Manager")">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Candidates Management</li>
+                </ol>
+
+                <div class="alert alert-success" role="alert" style="display:@(TempData["Message"] != null ? "block" : "none");">
+                    @TempData["Message"]
+                </div>
+
+                <div class="mb-3">
+                    <label for="statusFilter" class="form-label">Filter by Status:</label>
+                    <select id="statusFilter" class="form-select" onchange="filterCandidates()">
+                        <option value="All">All</option>
+                        <option value="Passed">Passed</option>
+                        <option value="Failed">Failed</option>
+                        <option value="Not Taken">Not Taken</option>
+                    </select>
+                </div>
+
+                <a class="btn btn-primary mb-3" href="@Url.Action("AddCandidate", "Manager")">Add Candidate</a>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email</th>
+                                        <th>Phone Number</th>
+                                        <th>Education Details</th>
+                                        <th>Completed Test</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var candidate in Model)
+                                    {
+                                        var candidateResults = candidate.Results ?? new List<Result>();
+                                        var allTestsPassed = candidateResults.All(r => r.IsPassed);
+                                        var hasResults = candidateResults.Any();
+                                        var status = !hasResults ? "Not Taken" : (allTestsPassed ? "Passed" : "Failed");
+
+                                        <tr>
+                                            <td>@candidate.FirstName</td>
+                                            <td>@candidate.LastName</td>
+                                            <td>@candidate.Email</td>
+                                            <td>@candidate.PhoneNumber</td>
+                                            <td>@candidate.EducationDetails</td>
+                                            <td>@candidate.IsTestCompleted</td>
+                                            <td>@status</td>
+                                            <td>
+                                                <a asp-action="EditCandidate" asp-route-id="@candidate.CandidateId" class="btn btn-warning btn-sm">Edit</a>
+                                                <a asp-action="DeleteCandidate" asp-route-id="@candidate.CandidateId" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this candidate?');">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function filterCandidates() {
+            var filter = document.getElementById("statusFilter").value.toLowerCase();
+            var rows = document.querySelectorAll("tbody tr");
+
+            rows.forEach(row => {
+                var status = row.querySelector("td:nth-child(7)").textContent.toLowerCase();
+                row.style.display = (filter === "all" || filter === status) ? "" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
